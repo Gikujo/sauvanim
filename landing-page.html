@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand btn" href="sauvanim-accueil.html">
+                <div class="my-element" style="height: 100px;"><img src="images/logo-sauvanim.png"
+                        class="img-fluid h-100">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item fs-4 m-4">
+                        <a class="nav-link active" aria-current="page" href="sauvanim-accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item fs-4 m-4">
+                        <a class="nav-link" href="sauvanim-info.html">À propos</a>
+                    </li>
+                    <li class="nav-item fs-4 m-4">
+                        <a class="nav-link" href="sauvanim-don.html">Faire un don</a>
+                    </li>
+                    <li class="nav-item dropdown fs-4 m-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Agir
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Devenez membre d'une asociation</a></li>
+                            <li><a class="dropdown-item" href="#">Favorisez la biodiversité chez vous</a></li>
+                            <li><a class="dropdown-item" href="#">Calculez votre empreinte carbone</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="col-12 p-5 h-50">
+            <div id="presentation" class="col-12 p-lg-5">
+                <p class="col-lg-6 m-auto text-center p-3">SAUVANIM s'engage pour la protection de la vie animale et de
+                    la
+                    biodiversité depuis 2024.</p>
+                <a class="btn btn-primary col-8 col-lg-4 offset-2 offset-lg-4" href="#abonnement"
+                    role="button">Abonnez-vous à la
+                    Newsletter</a>
+            </div>
+        </section>
+        <div class="row col-12">
+            <h1 class="m-auto" style="width:max-content;">Une newsletter qui blablablabla...</h1>
+        </div>
+
+        <h3 class="col-6 offset-3 text-center p-5">Que trouverez-vous dans notre newsletter ?</h3>
+
+        <section id="images-arguments" class="col-lg-10 offset-lg-1 col-12 my-5" style="height:100vh;">
+            <div class="row col-12 h-25">
+                <div id="argument1" class="col-lg-5 col-12"></div>
+                <div id="image1" class="col-lg-5 offset-lg-2 col-12"></div>
+            </div>
+
+            <div class="row col-12 h-25">
+                <div id="argument2" class="col-lg-5 col-12"></div>
+                <div id="image2" class="col-lg-5 offset-lg-2 col-12"></div>
+            </div>
+
+            <div class="row col-12 h-25">
+                <div id="argument3" class="col-lg-5 col-12"></div>
+                <div id="image3" class="col-lg-5 offset-lg-2 col-12"></div>
+            </div>
+
+            <div class="row col-12 h-25">
+                <div id="argument4" class="col-lg-5 col-12"></div>
+                <div id="image4" class="col-lg-5 offset-lg-2 col-12"></div>
+            </div>
+        </section>
+
+        <section id="big image" class="col-12 h-100">
+
+        </section>
+
+        <section id="formulaire-abonnement" class="col-12">
+            <div class="row col-12">
+                <h3 class="col-8 offset-2 m-auto p-auto d-inline-block" style="width:max-content;">Abonnez-vous
+                    maintenant à notre newsletter !
+                </h3>
+            </div>
+            <form class="col-lg-10 offset-lg-1 col-12">
+                <div class="row col-12">
+                    <div id="form-name-div" class="col-lg-5 col-12">
+                        <label for="name" class="col-12" id="name-label">Nom :</label>
+                        <input type="text" class="col-12 m-3" name="name" id="name-input">
+                    </div>
+                    <div id="form-first-name-div" class="col-lg-5 offset-lg-2 col-12">
+                        <label for="name" class="col-12" id="first-name-label">Prénom :</label>
+                        <input type="text" class="col-12 m-3" name="first-name" id="first-name-input">
+                    </div>
+                </div>
+
+                <div class="row col-12">
+                    <div id="form-mail-div" class="col-lg-5 col-12">
+                        <label for="mail" class="col-12" id="mail-label">Email :</label>
+                        <input type="mail" class="col-12 m-3" name="mail" id="mail-input">
+                    </div>
+                    <div id="form-mail-confirm-div" class="col-lg-5 offset-lg-2 col-12">
+                        <label for="mail-confirm" class="col-12" id="mail-confirm-label">Confirmez votre email :</label>
+                        <input type="mail" class="col-12 m-3" name="mail-confirm" id="mail-confirm-input">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
