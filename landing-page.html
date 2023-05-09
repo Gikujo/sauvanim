@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="@media (max-width:1000px) {width:97vw; margin:0;}">
 
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .square-image {
+            width: 30vw;
+            min-width: 200px;
+        }
+
+        .color-white {
+            color: white;
+        }
+
+        @media (min-width: 579px) {
+            .text-sm-black {
+                color: black;
+            }
+        }
+    </style>
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="d-block w-100">
+    <nav class="navbar navbar-expand-lg bg-success w-100">
         <div class="container-fluid">
             <a class="navbar-brand btn" href="sauvanim-accueil.html">
                 <div class="my-element" style="height: 100px;"><img src="images/logo-sauvanim.png"
-                        class="img-fluid h-100">
+                        class="img-fluid h-100" alt="Sauvanim logo">
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -27,161 +43,190 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item fs-4 m-4">
-                        <a class="nav-link active" aria-current="page" href="sauvanim-accueil.html">Accueil</a>
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="sauvanim-accueil.html">Accueil</a>
                     </li>
                     <li class="nav-item fs-4 m-4">
-                        <a class="nav-link" href="sauvanim-info.html">À propos</a>
+                        <a class="nav-link text-white" href="sauvanim-info.html">À propos</a>
                     </li>
                     <li class="nav-item fs-4 m-4">
-                        <a class="nav-link" href="sauvanim-don.html">Faire un don</a>
+                        <a class="nav-link text-white" href="sauvanim-don.html">Faire un don</a>
                     </li>
                     <li class="nav-item dropdown fs-4 m-4">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Agir
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Devenez membre d'une asociation</a></li>
-                            <li><a class="dropdown-item" href="#">Favorisez la biodiversité chez vous</a></li>
-                            <li><a class="dropdown-item" href="#">Calculez votre empreinte carbone</a></li>
+                        <ul class="dropdown-menu text-white">
+                            <li><a class="dropdown-item bg-success text-white" href="#">Devenez membre d'une
+                                    asociation</a></li>
+                            <li><a class="dropdown-item bg-success text-white" href="#">Favorisez la biodiversité chez
+                                    vous</a></li>
+                            <li><a class="dropdown-item bg-success text-white" href="#">Calculez votre empreinte
+                                    carbone</a></li>
                         </ul>
                     </li>
                     <li class="nav-item fs-4 m-4">
-                        <a class="nav-link" href="sauvanim-espace-adherent.html">Espace adhérent</a>
+                        <a class="nav-link text-white" href="sauvanim-espace-adherent.html">Espace adhérent</a>
                     </li>
                     <li class="nav-item fs-4 m-4">
-                        <a class="nav-link" href="sauvanim-espace-asso.html">Espace association</a>
+                        <a class="nav-link text-white" href="sauvanim-espace-asso.html">Espace association</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="col-12 p-5 h-50">
-            <div id="presentation" class="col-12 p-lg-5">
-                <p class="col-lg-6 m-auto text-center p-3">SAUVANIM s'engage pour la protection de la vie animale et de
-                    la
-                    biodiversité depuis 2024.</p>
-                <a class="btn btn-primary col-8 col-lg-4 offset-2 offset-lg-4" href="#abonnement"
-                    role="button">Abonnez-vous à la
-                    Newsletter</a>
+    <main class="d-block w-100 bg-warning-subtle">
+
+        <div class="card text-bg-success my-4">
+
+            <img src="images/background-image-5.jpg" class="card-img img-fluid d-sm-block d-none"
+                alt="Wildlife protection">
+            <div class="d-sm-none d-block bg-success" style="height:30vh;"></div>
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <p class="col-lg-6 mx-auto text-center p-3 card-text text-sm-black fs-3 fw-bold my-md-5">
+                    SAUVANIM
+                    s'engage
+                    pour la protection de la vie animale et de la biodiversité depuis 2024.</p>
+                <a class="btn btn-success col-8 offset-2 col-lg-4 offset-lg-4 card-text my-md-5 d-none d-sm-block"
+                    href="#abonnement" role="button">Abonnez-vous à la Newsletter</a>
             </div>
-        </section>
+        </div>
         <div class="row col-12">
-            <h1 class="m-auto" style="width:max-content;">Une newsletter qui blablablabla...</h1>
+            <h1 class="m-auto w-100 text-center">La newsletter des défenseurs des animaux</h1>
         </div>
 
-        <h3 class="col-6 offset-3 text-center p-5">Que trouverez-vous dans notre newsletter ?</h3>
 
-        <section id="images-arguments" class="col-lg-10 offset-lg-1 col-12 my-5" style="height:100vh;">
+
+        <section id="images-arguments" class="col-lg-10 offset-lg-1 col-12 my-5 text-center" style="clear:both;">
+            <h3 class="col-8 offset-2 text-center py-5">Que trouverez-vous dans notre newsletter ?</h3>
             <div class="row col-12 h-25">
-                <div id="argument1" class="col-lg-5 col-12">Des informations sur les évènements organisés par les
-                    associations</div>
-                <div id="image1" class="col-lg-5 offset-lg-2 col-12"></div>
+                <div id="argument1"
+                    class="col-lg-5 col-12 d-flex flex-column align-items-center justify-content-center order-last order-lg-first mb-5 mb-lg-0">
+
+                    <p class="my-element fs-3">Des informations sur les projets en cours des associations
+                        (campagnes de communication, procès, actions sur le terrain, etc...)</p>
+                    <a class="btn btn-success" href="#" role="button">Je m'abonne</a>
+                </div>
+                <div id="image1" class="col-lg-5 offset-lg-2 col-12 order-first order-lg-last mt-5 mt-lg-0">
+                    <img src="images/image-1.jpg" alt="Sea Shepherd en pleine action" class="my-2 square-image">
+                </div>
             </div>
 
             <div class="row col-12 h-25">
-                <div id="argument2" class="col-lg-5 col-12">Des mises à jour sur les associations que l'on finance</div>
-                <div id="image2" class="col-lg-5 offset-lg-2 col-12"></div>
+                <div id="image2" class="col-lg-5 col-12 mt-5 mt-lg-0">
+                    <img src="images/image-2.jpg" alt="Sea Shepherd en pleine action" class="my-2 square-image">
+                </div>
+                <div id="argument2"
+                    class="col-lg-5 offset-lg-2 col-12 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-0">
+                    <p class="my-element fs-3">Des mises à jour sur les associations que l'on finance</p>
+                    <a class="btn btn-success" href="#" role="button">En savoir plus</a>
+                </div>
             </div>
 
             <div class="row col-12 h-25">
-                <div id="argument3" class="col-lg-5 col-12"></div>
-                <div id="image3" class="col-lg-5 offset-lg-2 col-12"></div>
+                <div id="argument3"
+                    class="col-lg-5 col-12 d-flex flex-column align-items-center justify-content-center order-last order-lg-first mb-5 mb-lg-0">
+
+                    <p class="my-element fs-3">Un guide pour réduire votre consommation de produits animaux</p>
+                    <a class="btn btn-success" href="#" role="button">Je m'abonne</a>
+                </div>
+                <div id="image3" class="col-lg-5 offset-lg-2 col-12 order-first order-lg-last mt-5 mt-lg-0">
+                    <img src="images/image-3.png" alt="Sea Shepherd en pleine action" class="my-2 square-image">
+                </div>
             </div>
 
             <div class="row col-12 h-25">
-                <div id="argument4" class="col-lg-5 col-12"></div>
-                <div id="image4" class="col-lg-5 offset-lg-2 col-12"></div>
+                <div id="image4" class="col-lg-5 col-12 mt-5 mt-lg-0">
+                    <img src="images/image-4.jpg" alt="Sea Shepherd en pleine action" class="my-2 square-image">
+                </div>
+                <div id="argument4"
+                    class="col-lg-5 offset-lg-2 col-12 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-0">
+                    <p class="my-element fs-3">Un récapitulatif des évènements à venir organisés par les associations
+                    </p>
+                    <a class="btn btn-success" href="#" role="button">En savoir plus</a>
+                </div>
             </div>
         </section>
 
-        <section id="big image" class="col-12 h-100">
+        <hr class="border border-secondary border-1 opacity-50">
 
-        </section>
-
-        <section id="formulaire-abonnement" class="col-12">
-            <div class="row col-12">
-                <h3 class="col-8 offset-2 m-auto p-auto d-inline-block" style="width:max-content;">Abonnez-vous
-                    maintenant à notre newsletter !
-                </h3>
-            </div>
+        <section id="formulaire-abonnement" class="col-12 py-5" style="height:max-content; clear:both;">
+            <h3 class="col-8 mx-auto my-5 w-100 text-center">Abonnez-vous maintenant à notre newsletter !</h3>
             <form class="col-lg-10 offset-lg-1 col-12">
                 <div class="row col-12">
                     <div id="form-name-div" class="col-lg-5 col-12">
-                        <label for="name" class="col-12" id="name-label">Nom :</label>
-                        <input type="text" class="col-12 m-3" name="name" id="name-input">
+                        <label for="name-input" class="col-12 px-3" id="name-label">Nom :</label>
+                        <input type="text" class="col-12 m-3 mx-2" name="name" id="name-input">
                     </div>
                     <div id="form-first-name-div" class="col-lg-5 offset-lg-2 col-12">
-                        <label for="name" class="col-12" id="first-name-label">Prénom :</label>
-                        <input type="text" class="col-12 m-3" name="first-name" id="first-name-input">
+                        <label for="first-name-input" class="col-12 px-3" id="first-name-label">Prénom :</label>
+                        <input type="text" class="col-12 m-3 mx-2" name="first-name" id="first-name-input">
                     </div>
                 </div>
 
                 <div class="row col-12">
                     <div id="form-mail-div" class="col-lg-5 col-12">
-                        <label for="mail" class="col-12" id="mail-label">Email :</label>
-                        <input type="mail" class="col-12 m-3" name="mail" id="mail-input">
+                        <label for="mail-input" class="col-12 px-3" id="mail-label">Email :</label>
+                        <input type="email" class="col-12 m-3 mx-2" name="mail" id="mail-input">
                     </div>
                     <div id="form-mail-confirm-div" class="col-lg-5 offset-lg-2 col-12">
-                        <label for="mail-confirm" class="col-12" id="mail-confirm-label">Confirmez votre email :</label>
-                        <input type="mail" class="col-12 m-3" name="mail-confirm" id="mail-confirm-input">
+                        <label for="mail-confirm-input" class="col-12 px-3" id="mail-confirm-label">Confirmez votre
+                            email
+                            :</label>
+                        <input type="email" class="col-12 m-3 mx-2" name="mail-confirm" id="mail-confirm-input">
                     </div>
                 </div>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="w-100 bg-success text-white">
         <div class="row col-12">
-            <div id="address" class="col-md-4 col-6">
-                <i class="fas fa-home"></i> 63739 street lorem ipsum<br />
+            <div id="address" class="col-md-4 col-6 d-flex justify-content-center align-items-center fs-5 my-4 my-md-0">
+                <i class="fas fa-home"></i> 63739 street lorem ipsum<br>
                 City, Country
             </div>
-            <div id="contact" class="col-md-4 col-6">
+            <div id="contact" class="col-md-4 col-6 d-flex justify-content-center align-items-center fs-5 my-4 my-md-0">
                 <i class="fas fa-headset"></i> +33 1 23 45 67 89
             </div>
-            <div id="horaires" class="col-md-4 col-12">
-                <i class="fa-solid fa-clock"></i>
+            <div id="horaires" class="col-md-4 col-12 my-3 my-lg-0">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Mercredi : 08h - 16h</li>
-                    <li class="list-group-item">Mardi : 10h - 14h</li>
-                    <li class="list-group-item">Jeudi : 10h - 14h</li>
-                    <li class="list-group-item">Vendredi : 10h - 14h</li>
-                    <li class="list-group-item">Fermé les samedis et dimanches</li>
-                    <li class="list-group-item">Lundi : 10h - 14h</li>
+                    <li class="list-group-item color-white bg-success">Lundi : 10h - 14h</li>
+                    <li class="list-group-item color-white bg-success">Mardi : 10h - 14h</li>
+                    <li class="list-group-item color-white bg-success">Mercredi : 08h - 16h</li>
+                    <li class="list-group-item color-white bg-success">Jeudi : 10h - 14h</li>
+                    <li class="list-group-item color-white bg-success">Vendredi : 10h - 14h</li>
+                    <li class="list-group-item color-white bg-success">Fermé les samedis et dimanches</li>
                 </ul>
             </div>
         </div>
-        <div class="row h-25">
-            <div class="col-md-3 col-5">
-                <div class="my-element"><img src="images/logo-sauvanim.png" class="img-fluid h-100">
-                </div>
-            </div>
-            <div class="col-md-6 col-7">
-                <div class="d-flex justify-content-between">
-                    <a href="" class=" p-4 text-black">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class=" p-4 text-black">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class=" p-4 text-black">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class=" p-4 text-black">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
+        <div class="row h-25 w-100 mx-0">
 
+            <div class="col-md-3 offset-md-0 col-4 offset-4 px-0 d-flex justify-content-center">
+                <img src="images/logo-sauvanim.png" class="img-fluid w-50 my-2" alt="Sauvanim logo">
             </div>
 
-            <div class="col-md-3 col-5">
-                <div class="my-element"><img src="images/assos-soutenues.jpg" class="img-fluid h-100">
-                </div>
+            <div class=" col-12 col-md-6 d-flex justify-content-between">
+                <a href="#" class="fs-1 p-4 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="fs-1 p-4 text-white">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="fs-1 p-4 text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="fs-1 p-4 text-white">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
-        </div>
+
+            <div class="col-md-3 d-none d-lg-flex justify-content-center">
+                <img src="images/assos-soutenues.jpg" class="img-fluid w-50 my-2" alt="Sauvanim logo">
+            </div>
+
         </div>
     </footer>
 
